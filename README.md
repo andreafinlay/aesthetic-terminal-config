@@ -2,6 +2,8 @@
 
 An elegant, relaxing dev experience using Hyper, Fish and Color LS
 
+!["example"](https://github.com/andreafinlay/aesthetic-terminal-config/blob/master/assets/example.png?raw=true)
+
 ## Setup
 
 1. Install [Hyper.js](https://hyper.is/)
