@@ -36,7 +36,7 @@ By default, `~/.config/fish/` will should have been created. If not, create it.
 
 Create `~/.config/fish/conf.d/` (if it doesn't already exist).
 
-Copy the `omf.fish` file from the */src/fish/conf.d* folder in this repo into `~/.config/fish/conf.d/`.
+Copy the `omf.fish` file from the */src/fish/conf.d/* folder in this repo into `~/.config/fish/conf.d/`.
 
 Open `~/.local/share/omf/init.fish` and add `set -x VIRTUAL_ENV_DISABLE_PROMPT 1` to the bottom of the file.
 
