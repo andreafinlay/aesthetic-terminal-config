@@ -1,6 +1,6 @@
 # ａｅｓｔｈｅｔｉｃ terminal config
 
-An elegant, relaxing dev experience using Hyper, Fish and Color LS
+An elegant, relaxing terminal experience using Hyper, Fish and Color LS
 
 !["example"](https://github.com/andreafinlay/aesthetic-terminal-config/blob/master/assets/example.png?raw=true)
 
@@ -20,11 +20,11 @@ An elegant, relaxing dev experience using Hyper, Fish and Color LS
 
 Create `~/.hyper_plugins/local/` and clone [hyper-tabs-enhanced](https://github.com/henrikdahl/hyper-tabs-enhanced) into it.
 
-Replace `index.js` with the index file in the */hyper/plugins/hyper-tabs-enhanced/* folder from this repo.
+Replace `index.js` with the index file in the */src/hyper/plugins/hyper-tabs-enhanced/* folder from this repo.
 
 ##### Main config
 
-Hyper will have created `~/.hyper.js` by default. Replace it with the one from the *hyper* folder in this repo.
+Hyper will have created `~/.hyper.js` by default. Replace it with the one from the */src/hyper* folder in this repo.
 
 Fish will have installed to `~/usr/local/bin/fish` by default, but if you installed it elsewhere, make sure to modify the value of `shell` in your hyper config to point to your Fish install path.
 
@@ -36,13 +36,13 @@ By default, '~/.config/fish/' will should have been created. If not, create it.
 
 Create '~/.config/fish/conf.d/' (if it doesn't already exist).
 
-Copy the `omf.fish` from the */fish/conf.d* folder in this repo into `~/.config/fish/conf.d/`.
+Copy the `omf.fish` file from the */src/fish/conf.d* folder in this repo into `~/.config/fish/conf.d/`.
 
 Open `~/.local/share/omf/init.fish` and add `set -x VIRTUAL_ENV_DISABLE_PROMPT 1` to the bottom of the file.
 
 ##### Main config
 
-Create '~/.config/fish/functions/' and copy `fish_prompt.fish` and `fish_title.fish` from this repo's */fish/functions/* into it. 
+Create '~/.config/fish/functions/' and copy `fish_prompt.fish` and `fish_title.fish` from this repo's */src/fish/functions/* into it. 
 
 `fish_prompt.fish` contains the main Fish theming config, based on Beau Hastings' [Kawasaki](https://github.com/hastinbe/theme-kawasaki) theme for OMF.
 
@@ -60,9 +60,9 @@ Re-open your `~/.hyper.js` and align the font-family with whatever patched font 
 
 *NOTE*: Step 4 of the Color LS installation, adding tab completion, won't work since Fish doesn't know how to handle `.sh` files. I resolved this by creating a '~/.config/fish/config.fish' file and setting aliases for Color LS commands + flags with the syntax `alias [alias]='[command]'`, as is suggested in "Recommended configurations". I've included a couple of examples in this repo. Available flags are listed [here](https://github.com/athityakumar/colorls#flags).
 
-Installing Color LS should have also installed [Rainbow](https://github.com/sickill/rainbow) as a dependency. Access the Rainbow config by navigating to `/Library/Ruby/Gems/2.3.0/gems/rainbow-3.0.0/` and open `lib/rainbow/x11_color_names.rb`. This contains a list of colours which are available to Color LS, in RGB. Copy the contents from the same file in the */colorls/rainbow* folder in this repo into that file. (There are some that I've added that I'm not using in this config so feel free to play around with them.)
+Installing Color LS should have also installed [Rainbow](https://github.com/sickill/rainbow) as a dependency. Access the Rainbow config by navigating to `/Library/Ruby/Gems/2.3.0/gems/rainbow-3.0.0/` and open `lib/rainbow/x11_color_names.rb`. This contains a list of colours which are available to Color LS, in RGB. Copy the contents from the same file in the */src/colorls/rainbow* folder in this repo into that file. (There are some that I've added that I'm not using in this config so feel free to play around with them.)
 
-Open `config/colorls/dark_colors.yaml` and replace the contents with the ones from the identical file in the */colorls* folder in this repo. Lots of opportunity to mess around here as well as I only modified a few myself.
+Open `~/.config/colorls/dark_colors.yaml` and replace the contents with the ones from the identical file in the */src/colorls* folder in this repo. Lots of opportunity to mess around here as well as I only modified a few myself.
 
 That's it! (I think). Let me know if it isn't working or if you have any suggestions. Enjoy!
 
