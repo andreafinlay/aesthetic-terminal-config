@@ -30,11 +30,11 @@ Fish will have installed to `~/usr/local/bin/fish` by default, but if you instal
 
 #### Fish
 
-By default, '~/.config/fish/' will should have been created. If not, create it.
+By default, `~/.config/fish/` will should have been created. If not, create it.
 
 ##### OMF setup
 
-Create '~/.config/fish/conf.d/' (if it doesn't already exist).
+Create `~/.config/fish/conf.d/` (if it doesn't already exist).
 
 Copy the `omf.fish` file from the */src/fish/conf.d* folder in this repo into `~/.config/fish/conf.d/`.
 
@@ -42,7 +42,7 @@ Open `~/.local/share/omf/init.fish` and add `set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 ##### Main config
 
-Create '~/.config/fish/functions/' and copy `fish_prompt.fish` and `fish_title.fish` from this repo's */src/fish/functions/* into it. 
+Create `~/.config/fish/functions/` and copy `fish_prompt.fish` and `fish_title.fish` from this repo's */src/fish/functions/* into it. 
 
 `fish_prompt.fish` contains the main Fish theming config, based on Beau Hastings' [Kawasaki](https://github.com/hastinbe/theme-kawasaki) theme for OMF.
 
@@ -58,7 +58,7 @@ Download and install [Color LS](https://github.com/athityakumar/colorls) (requir
 
 Re-open your `~/.hyper.js` and align the font-family with whatever patched font you installed.
 
-*NOTE*: Step 4 of the Color LS installation, adding tab completion, won't work since Fish doesn't know how to handle `.sh` files. I resolved this by creating a '~/.config/fish/config.fish' file and setting aliases for Color LS commands + flags with the syntax `alias [alias]='[command]'`, as is suggested in "Recommended configurations". I've included a couple of examples in this repo. Available flags are listed [here](https://github.com/athityakumar/colorls#flags).
+*NOTE*: Step 4 of the Color LS installation, adding tab completion, won't work since Fish doesn't know how to handle `.sh` files. I resolved this by creating a `~/.config/fish/config.fish` file and setting aliases for Color LS commands + flags with the syntax `alias [alias]='[command]'`, as is suggested in "Recommended configurations". I've included a couple of examples in this repo. Available flags are listed [here](https://github.com/athityakumar/colorls#flags).
 
 Installing Color LS should have also installed [Rainbow](https://github.com/sickill/rainbow) as a dependency. Access the Rainbow config by navigating to `/Library/Ruby/Gems/2.3.0/gems/rainbow-3.0.0/` and open `lib/rainbow/x11_color_names.rb`. This contains a list of colours which are available to Color LS, in RGB. Copy the contents from the same file in the */src/colorls/rainbow* folder in this repo into that file. (There are some that I've added that I'm not using in this config so feel free to play around with them.)
 
