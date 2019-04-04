@@ -30,7 +30,7 @@ Fish will have installed to `~/usr/local/bin/fish` by default, but if you instal
 
 #### Fish
 
-By default, `~/.config/fish/` will should have been created. If not, create it.
+By default, `~/.config/fish/` should have been created. If not, create it.
 
 ##### OMF setup
 
